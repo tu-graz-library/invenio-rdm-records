@@ -116,7 +116,7 @@ class AccessComponent(ServiceComponent):
 class MetadataComponent(ServiceComponent):
     """Service component for metadata."""
 
-    new_version_skip_fields = ['publication_date', 'version']
+    new_version_skip_fields = ['publication_date', 'version', 'identifiers']
 
     def create(self, identity, data=None, record=None, **kwargs):
         """Inject parsed metadata to the record."""
